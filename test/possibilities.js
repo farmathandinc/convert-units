@@ -12,7 +12,7 @@ tests['l possibilities'] = function () {
 
 tests['kg possibilities'] = function () {
   var actual = convert().from('kg').possibilities()
-    , expected = [ 'mcg', 'mg', 'g', 'kg', 'oz', 'lb', '1,000 seeds', '10,000 seeds', 'US ton', 'bags', 'lbs', 'mt' ];
+    , expected = [ 'mcg', 'mg', 'g', 'kg', 'oz', 'lb', '1,000 seeds', '10,000 seeds', 'us ton', 'bags', 'lbs', 'mt' ];
   assert.deepEqual(actual.sort(), expected.sort())
 };
 
@@ -30,7 +30,7 @@ tests['each possibilities'] = function () {
 
 tests['mass possibilities'] = function () {
   var actual = convert().possibilities('mass')
-    , expected = [ 'mcg', 'mg', 'g', 'kg', 'oz', 'lb', '1,000 seeds', '10,000 seeds', 'US ton', 'bags', 'lbs', 'mt' ];
+    , expected = [ 'mcg', 'mg', 'g', 'kg', 'oz', 'lb', '1,000 seeds', '10,000 seeds', 'us ton', 'bags', 'lbs', 'mt' ];
   assert.deepEqual(actual.sort(), expected.sort())
 };
 
@@ -280,6 +280,8 @@ tests['all possibilities'] = function () {
       , 'tsk'
       , 'tsp'
       , 'tsp/s'
+      , 'us ton/ac'
+      , 'us ton/ha'
       , 'V'
       , 'VA'
       , 'VAR'
@@ -300,7 +302,7 @@ tests['all possibilities'] = function () {
       "10,000 seeds",
       "10,000 seeds/ac",
       "10,000 seeds/ha",
-      "US ton",
+      "us ton",
       "ac/case",
       "ac/jug",
       "bags",
